@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store" />
+  </head>
+  <body>
+    <div>
+      <h1>Book Store</h1>
+      <p>This Is My Book Store, Welcome</p>
+    </div>
+    <form action="" method="GET">
+      <input type="hidden" value="Osama" />
+      <div>
+        <label>Username</label>
+        <input type="text" required placeholder="Username" name="user" autofocus minlength="5" maxlength="20" />
+      </div>
+      <br />
+      <div>
+        <input type="text" name="token" value="b92f1fc2fce391ad7af633723afd3055" hidden/>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" value="o@nn.sa" name="mail" disabled />
+      </div>
+      <br />
+      <div>Skills</div>
+      <div>
+        <input id="ps" type="checkbox" name="skills" value="ps" checked />
+        <label for="ps">Problem Solving</label>
+      </div>
+      <div>
+        <input id="lt" type="checkbox" name="skills" value="lt" />
+        <label for="lt">Logical Thinking</label>
+      </div>
+      <div>
+        <input id="as" type="checkbox" name="skills" value="as" />
+        <label for="as">Advanced Search</label>
+      </div>
+      <div>
+        <input id="ap" type="checkbox" name="skills" value="ap" />
+        <label for="ap">Advanced Planning</label>
+      </div>
+      <br />
+
+      <br />
+      <div>Jobs</div>
+      <div>
+        <input id="bk" type="radio" name="jobs" value="bk" checked/>
+        <label for="bk">back-end</label>
+      </div>
+      <div>
+        <input id="ft" type="radio" name="jobs" value="ft" />
+        <label for="ft">front-end</label>
+      </div>
+      <div>
+        <input id="ba" type="radio" name="jobs" value="ba" />
+        <label for="ba">Business Analyst</label>
+      </div>
+      <br />
+
+      <label for="book">Choose Book:</label>
+      <select name="book" id="book">
+        <optgroup label="PHP">
+          <option value="5" selected>v5.0</option>
+          <option value="6">v6.0</option>
+          <option value="7">v7.0</option>
+        </optgroup>
+        <optgroup label="Python">
+          <option value="2">v2.0</option>
+          <option value="3">v3.0</option>
+          <option value="39">v3.9</option>
+        </optgroup>
+      </select>
+      <hr />
+      <textarea name="brief" cols="60" rows="10" placeholder="Write Here Why You Want To Learn Programming"></textarea>
+      <br>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>
