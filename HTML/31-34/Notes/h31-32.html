@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store" />
+  </head>
+  <body>
+    <div>
+      <h1>Book Store</h1>
+      <p>This Is My Book Store, Welcome</p>
+    </div>
+    <form action="" method="GET" novalidate target="_blank">
+      <label for="book">Choose Book:</label>
+      <select name="book" id="book">
+        <optgroup label="Romantic Books">
+          <option value="1">Book 1</option>
+          <option value="2">Book 2</option>
+          <option value="3">Book 3</option>
+        </optgroup>
+        <optgroup label="Police Books">
+          <option value="4" selected>Book 4</option>
+          <option value="5">Book 5</option>
+          <option value="6">Book 6</option>
+        </optgroup>
+      </select>
+
+      <hr />
+
+      <div>
+        <label>Upload</label>
+        <input type="file" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Search</label>
+        <input type="search" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Url</label>
+        <input type="url" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Date</label>
+        <input type="date" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Month</label>
+        <input type="month" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label>Time</label>
+        <input type="time" />
+      </div>
+
+      <input list="programming" name="prog">
+
+      <datalist id="programming">
+        <option value="Python">
+        <option value="PHP">
+        <option value="C#">
+        <option value="C">
+        <option value="C++">
+        <option value="Scala">
+      </datalist>
+
+      <hr />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>
