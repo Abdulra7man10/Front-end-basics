@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shape-1,
+.shape-2,
+.shape-3 {
+  border-width: 5px;
+  background-color: #ddd;
+  outline : 5px solid black;
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.shape-1 {
+  border: red solid;
+}
+
+.shape-2 {
+  border-color: blue green;
+  border-style: solid;
+}
+
+.shape-3 {
+  border-color: red green blue yellow;
+  border-style: dashed;
+}
+
+.container {
+  background-color: #ddd;
+  margin: 30px;
+  padding: 5px 0 5px 10px;
+  visibility: hidden;
+}
+
+.element-1,
+.element-2,
+.element-3 {
+  width: 400px;
+  background-color: #ddd;
+  padding: 10px;
+  border-left: 5px solid transparent;
+  visibility: visible;
+}
+
+.element-1 {
+  border-left-color: #e91e63;
+}
+
+.element-2 {
+  visibility: hidden;
+}
+
+.element-3 {
+  border-left-color: #009688;
+}
