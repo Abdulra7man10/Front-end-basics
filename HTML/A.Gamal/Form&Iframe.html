@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form + Iframe</title>
 </head>
 <body>
   <form action="test.cs" method="post">
     <fieldset>
       <legend>Log-in</legend>
       <label for="user">Username : </label>
-      <input id="user" type="text" name="user" placeholder="Username">
+      <input id="user" type="text" name="user" placeholder="Username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
       <br><br>
 
       <label for="pass">Password : </label>
-      <input id="pass" name="password" type="password" required>
+      <input id="pass" name="password" type="password">
       <br><br>
 
       <label for="col">Color : </label>
@@ -48,5 +48,6 @@
       <input type="submit" value="Submit">
     </fieldset>
   </form>
+  <iframe width="797" height="498" src="https://www.youtube.com/embed/o6As7cP3eIo?list=PLknwEmKsW8OuN04Odt2sJqt4aAnkp-iYA" title="#25 كورس html كامل بالعربي |  الفرق بين iframe و بين embed و بين object" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
