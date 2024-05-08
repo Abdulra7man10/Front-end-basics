@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url(OIP.jpeg);
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+    div {
+      height: 600px;
+      width: 900px;
+      margin: auto;
+      padding: 10px;
+      border: 4px dotted red;
+      background-image: url(Hada_mountains.jpg);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: contain; /* 50% , 200px 300px , contain */
+      background-origin: content-box; /* padding-box (default) , content-box , border-box */
+      background: url(Hada_mountains.jpg) no-repeat top right/contain content-box; /* color image repeat position/size origin*/
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

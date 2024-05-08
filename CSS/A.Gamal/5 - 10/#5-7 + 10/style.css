@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  /* padding: 15px 5px; */
+  border: solid yellow 8px;
+  border-radius: 50% 50% 0px;
+}

@@ -1,0 +1,7 @@
+h1 {
+  background-color: red;
+  width: fit-content; 
+  /* fit -> والصفحة على قد الكلام */
+  /* max -> لآخر السطر */
+  /* min -> كل سطر كلمة */
+}
