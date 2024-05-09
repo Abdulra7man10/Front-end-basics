@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+      margin: 10px;
+      width: 300px;
+      position: relative;
+    }
+    p::first-letter {
+      color: blueviolet;
+    }
+    p::first-line {
+      background-color: yellow;
+    }
+    /*p::before {
+      content: '{ ';
+      color: green;
+    }*/
+    p::before {
+      content: '';
+      background-color: brown;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: 2%;
+      left: -12px;
+    }
+    p::after {
+      column-count: ' }';
+      color: green;
+    }
+    ::selection {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur cupiditate rerum repudiandae quod incidunt magnam aut harum blanditiis corporis ratione nisi natus perspiciatis, tempore ullam doloremque sint quisquam quasi, nesciunt sequi maiores fuga. Earum sequi fugiat aspernatur, vero aliquid, doloribus, alias odio ullam officia inventore magnam iste sunt eos porro.
+  </p>
+</body>
+</html>

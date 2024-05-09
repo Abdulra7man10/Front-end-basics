@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      height: 30px;
+      width: 80px;
+      background-color: black;
+      color: white;
+      margin: auto;
+      /* transition : property(all) duration(0s) timing-function(ease) delay(0s) , ....(another property) */
+      /* timing-funtions => ease(S F S) , ease-in(S N), ease-out(N S), linear(N), steps(number), step-end */
+      transition: all 2s ease 0.5s;
+    }
+    div:hover {
+      width: 100%;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>Hello world</div>
+</body>
+</html>

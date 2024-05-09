@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      background-color: yellow;
+    }
+    .parent div {
+      width: 50px;
+      height: 50px;
+      float: right;
+    }
+    .red {
+      background-color: red;
+      /* float: left; */
+    }
+    .green {
+      background-color: green;
+      /* float: right; */
+    }
+    .blue {
+      background-color: blue;
+    }
+    .x {
+      clear: both; /* work to make empty space for float */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+  </div>
+  <div class="x"></div>
+  <p>Hello world</p>
+</body>
+</html>

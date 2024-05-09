@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.blue {
+  top: 20px;
+  left: 20px;
+  background-color: blue;
+  z-index: 1;
+}
+.green {
+  top: 30px;
+  left: 30px;
+  background-color: green;
+  z-index: 2;
+}
+.red {
+  top: 40px;
+  left: 40px;
+  background-color: red;
+  z-index: 3;
+}
+.black {
+  width: 10px;
+  height: 10px;
+  top: 120px;
+  left: 20px;
+  background-color: black;
+  z-index: 2;
+}
+
+.clear {
+  clear: both;
+}
+
+.lorem
+{
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eee;
+  line-height: 27px;
+  border: 3px solid;
+  border-color: red skyblue;
+  position: relative;
+  top: 200px;
+  left: 80px;
+}
+
+.lorem span {
+  padding: 5px 15px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  background-color: skyblue;
+}
+
+.top-left {
+  top: -19px;
+  left: -21px;
+  border-right: 2px solid red;
+}
+.top-right {
+  top: -19px;
+  right: -21px;
+  border-left: 2px solid red;
+}
+.bottom-left {
+  bottom: -19px;
+  left: -21px;
+  border-right: 2px solid red;
+}
+.bottom-right {
+  bottom: -19px;
+  right: -21px;
+  border-left: 2px solid red;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #222;
+    }
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      animation-name: square;
+      animation-duration: 5s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal; /* normal , reverse , alternate , alternate-reverse */
+      animation-timing-function: ease; /* as transition */
+      animation-fill-mode: forwards; /* none , forwards(last status) , backwards(first status) , both */
+      animation-play-state: paused; /* paused , running */
+      /* animation : name duration timing delay count direction fill play */
+    }
+    @keyframes square{
+      0% { /*from (0%) -> to (100%)*/
+        background-color: red;
+        width: 100px;
+      }
+      50% {
+        width: 100%;
+        background-color: blue;
+      }
+      100%{
+        background-color: red;
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

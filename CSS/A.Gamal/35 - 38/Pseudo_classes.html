@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      height: 100px;
+      width: 200px;
+      background-color: black;
+    }
+    div:hover {
+      width: 180px;
+      background-color: red;
+    }
+    div:active {
+      background-color: blueviolet;
+    }
+    a {
+      color: aquamarine;
+      text-decoration: none;
+      font-size: 2em;
+      display: block;
+    }
+    a:visited {
+      color: yellowgreen;
+    }
+    a:active {
+      background: red;
+    }
+    a:hover {
+      color: blueviolet;
+    }
+    input:focus {
+      border:2px solid brown;
+      outline: none;
+    }
+    input:invalid {
+      background-color: red;
+    }
+    input:valid {
+      background-color: green;
+    }
+    input:disabled {
+      background-color: #eee;
+    }
+    input:required {
+      border: 2px solid red;
+    }
+    input:checked {
+      position: absolute;
+      right: 0;
+    }
+  </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+  <div></div>
+  <a href="###">Google</a>
+  <input type="email" name="Email" required>
+  <br>
+  <input type="checkbox" >
+</body>
+</html>
