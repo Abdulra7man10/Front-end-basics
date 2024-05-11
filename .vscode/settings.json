@@ -64,6 +64,7 @@
     "initializer_list": "cpp",
     "iterator": "cpp",
     "random": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "string": "cpp"
   }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      background-color: gold;
+      padding: 10px;
+      height: 400px;
+
+      display: flex; /* inline-flex (fit childs) , flex (100%) */
+      flex-direction: row-reverse;
+      flex-wrap: wrap-reverse; /* wrap , wrap-reverse , nowrap (defualt) */
+      flex-flow: row wrap; /* direction wrap */
+
+      justify-content: stretch; /* work with same direction -> row(X) col(Y) */
+      /* flex-start (defualt) , flex-end , left , right , center , space-between , space-around , space-evenly */
+      /* align-items: flex-start; work with reverse of direction -> row(Y) col(X) */
+      /* stretch (default) , left , right , center , flex-end , flex-start */
+      align-content: stretch; /* must work with wrap , take the all contnet without space , can use space-around and others */
+      
+      gap: 20px;
+    }
+    .parent p {
+      padding: 10px;
+      margin: 10px;
+      flex-grow: 1;
+    }
+    .item1 {
+      background-color: red;
+      /* align-self: center; */
+      order: 4;
+      /* flex-grow: 1; */
+      flex-basis: 200px; /* width(row) or height(col) */
+      flex:1 0 200px; /* grow shrink basis */
+    }
+    .item2 {
+      background-color: green;
+      order: 3;
+      flex-shrink: 5;
+    }
+    .item3 {
+      background-color: blue;
+      /* align-self: flex-end; */
+      order: 2;
+    }
+    .item4 {
+      background-color: blueviolet;
+      order: 1;
+      flex-shrink: 2;
+      /* flex-grow: 1; */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <p class="item1">Item 1</p>
+    <p class="item2">Item 2</p>
+    <p class="item3">Item 3</p>
+    <p class="item4">Item 4</p>
+    <!-- <p class="item4">Item 4</p>
+    <p class="item4">Item 4</p>
+    <p class="item4">Item 4</p>
+    <p class="item4">Item 4</p> -->
+
+  </div>
+</body>
+</html>
