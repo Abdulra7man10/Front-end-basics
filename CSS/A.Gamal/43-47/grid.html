@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    .parent {
+      background-color: red;
+      padding: 10px;
+      /* width: 500px; */
+      height: 500px;
+      display: grid;
+      /* grid-template-columns: repeat(4,1fr); create column */
+      /* px , % , auto , fr , repeat(n,value) , minmax(value,value) , repeat(auto-fill, ...) */
+      grid-template-rows: auto;
+      gap: 10px;
+      /* justify-content: space-evenly; should auto => start end center */
+      /* align-content: space-between; */
+      grid-template-areas: 
+      "one two two three"
+      "one four four four"
+      "five six seven eight"
+      "five nine seven ten"
+      ;
+
+    }
+    .parent div {
+      background-color: gold;
+      text-align: center;
+    }
+    /* .parent .item1 { */
+      /* background-color: blue; */
+      /* grid-column: 1/3; start to end => 1 to 3 */
+      /* 1/-1 => all the row number 1*/
+    /* } */
+    /* .parent .item4 {
+      background-color: green; */
+      /* grid-row: 2/4; from line 2 to 4 */
+      /* grid-column: 1/4; */
+    /* } */
+    /* .parent .item9 {
+      background-color: pink;
+      grid-column: 2/5;
+      grid-row: 2/2;
+    } */
+
+    .item1{
+      grid-area: one;
+    }
+    .item2{
+      grid-area: two;
+    }
+    .item3{
+      grid-area: three;
+    }
+    .item4{
+      grid-area: four;
+    }
+    .item5{
+      grid-area: five;
+    }
+    .item6{
+      grid-area: six;
+    }
+    .item7{
+      grid-area: seven;
+    }
+    .item8{
+      grid-area: eight;
+    }
+    .item9{
+      grid-area: nine;
+    }
+    .item10{
+      grid-area: ten;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+    <div class="item3">item3</div>
+    <div class="item4">item4</div>
+    <div class="item5">item5</div>
+    <div class="item6">item6</div>
+    <div class="item7">item7</div>
+    <div class="item8">item8</div>
+    <div class="item9">item9</div>
+    <div class="item10">item10</div>
+  </div>
+</body>
+</html>
