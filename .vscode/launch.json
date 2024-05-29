@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/abdo1/Desktop/Current_track/3-Problem solving/Solving files",
+      "program": "c:/Users/abdo1/Desktop/Current_track/3-Problem solving/Solving files/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
