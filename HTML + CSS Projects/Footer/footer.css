@@ -80,7 +80,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex-grow: 2;
   gap: 50px;
 }
 
@@ -123,8 +123,7 @@ footer {
 }
 
 .second .regs {
-  min-width: 275px;
-  max-width: 475px;
+  flex-grow: 1;
 }
 
 .regs input {

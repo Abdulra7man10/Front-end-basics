@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  
+</head>
+<body>
+  <script>
+    const coffee = 5;
+    const bagel = 3;
+    const soup = 9;
+    const tax = 0.1;
+    let total = 0;
+  </script>
+  <h2>Menu</h2>
+  <button onclick="console.log(`Cost of food: $${(total+total*tax.toFixed(2))}`);">Total cost</button>
+  <button onclick="total += coffee;">Coffee</button>
+  <button onclick="total -= coffee;">Remove Coffee</button>
+  <button onclick="total += bagel;">Bagel</button>
+  <button onclick="total -= bagel;">Remove Bagel</button>
+  <button onclick="total += soup;">Soup</button>
+  <button onclick="total -= soup;">Remove Soup</button>
+  <button onclick="total = 0;">Reset</button>
+</body>
+</html>
