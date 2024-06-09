@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    const product = {
+      name: 'socks',
+      price: 1900,
+      ['delevary']: '1 day',
+      rating: {
+        starts: 4.5,
+        count: 87
+      }, //nested objects
+      fun: function f1() {
+        console.log('functions inside an object');
+      }
+    };
+    product.name = 'Cotton socks';
+    console.log(product['name']);
+    console.log(product['delevary']);
+    product.newitem = true;
+    console.log(product.newitem);
+
+    delete product.newitem;
+    console.log(product);
+    console.log(JSON.stringify(product)); //convert the JS Object to JSON format
+    const jsonString = JSON.stringify(product);
+    console.log(JSON.parse(jsonString)); //convert JSON to JS Object
+  </script>
+</body>
+</html>
