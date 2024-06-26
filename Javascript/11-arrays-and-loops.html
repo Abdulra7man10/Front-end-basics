@@ -9,8 +9,18 @@
   <script>
     const arr = [1,'hello',3];
     arr.splice(0,1);
-    console.log(arr[1]);
+    const x = 'hello'
+    const text = arr[x];
+    console.log(text);
     arr.push(11);
+
+    const arr1 = [1,2,3];
+    const arr2 = arr1.slice(); // to make it as diff reference
+    arr2.push(4);
+    console.log(arr1);
+    console.log(arr2);
+    const [first,second,third] = [1,2,3]; //an easier way to story values
+    console.log(second);
   </script>
 </body>
 </html>

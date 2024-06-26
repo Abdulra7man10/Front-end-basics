@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/11-todo-list.css">
+  <title>Document</title>
+</head>
+<body onload="printTodos();">
+  <p>Todo list</p>
+  <div class="todo-input-grid">
+    <input placeholder="todo name" class="js-todo name-input" onkeydown="handleEnter(event);">
+    <input type="date" class="js-todo-date date-input">
+    <button onclick="addTodo();" class="add-todo-button">Add</button>
+  </div>
+  <div class="js-message todo-grid"></div>
+  <script src="scripts/11-todo-list.js"></script>
+</body>
+</html>

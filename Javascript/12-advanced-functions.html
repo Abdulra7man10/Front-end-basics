@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced functions</title>
+</head>
+<body style="background-color: #333;">
+  <script>
+    function greeting () {
+      console.log('hello');
+    }
+    //greeting();
+
+    const function1 = function greeting() { // greeting optional and can be used for self-reference
+      console.log('hello1');
+    }; //functions are values
+    function1();
+
+
+
+    const object1 = {
+      num: 2,
+      fun: function() {
+        console.log('hello2');
+      }
+    }
+
+    setTimeout(function() {console.log('timeout :(');}, 2000);
+    //imagine that function like change color,
+    //you can make many things buy passing functions 
+
+    setInterval(function() {console.log('interval');}, 2000);
+    //it will keep running bt after 3s
+  </script>
+</body>
+</html>
